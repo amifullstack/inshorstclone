@@ -1,0 +1,19 @@
+{
+  "name": "reactexpres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"npm run server\" \" npm run client\" "
+  },
+  "author": "sanjayshr",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.11"
+  }
+}
