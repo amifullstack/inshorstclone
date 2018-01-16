@@ -8,8 +8,19 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <a href="/users">Users</a>
-        <a href="/news">News</a>
+        <ul>
+          <li>
+            <a href="/apis">API's</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/users">Users</a>
+          </li>
+          <li>
+            <a href="/news">News</a>
+          </li>
+        </ul>
       </div>
     );
   }

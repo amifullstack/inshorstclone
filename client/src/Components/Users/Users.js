@@ -17,9 +17,12 @@ class Users extends Component {
 
   componentDidMount() {
     fetch("/api/users")
-      .then(res => res.json()) // Promiss
-      .then(users => this.setState({ users }, () => console.log(`Users Fetched from API`, users))); // data
-
+      .then(res => res.json())
+      .then(usersData =>
+        this.setState({ users: usersData.users }, () =>
+          console.log(`Users Fetched from API`, usersData)
+        )
+      ); // data
   }
 
   render() {
@@ -28,9 +31,7 @@ class Users extends Component {
         {/*<h1>First User: {this.state.users.name[0]}</h1>
         <p>ID: {this.state.users.id[0]}</p>*/}
         <h2>Users</h2>
-        <ul>
-        {this.state.users.map(user => <li>{user.fname}</li>)}
-        </ul>
+        <ul>{this.state.users.map(users => <li>{users.fname}</li>)}</ul>
       </div>
     );
   }

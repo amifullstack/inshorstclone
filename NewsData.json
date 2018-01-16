@@ -2,18 +2,22 @@
   "news": [
     {
       "_id": 1,
-      "title": "title 1",
-      "name": "name 1"
+      "title": "News 1: About Startups",
+      "name": "name 1",
+      "img": "./client/src/images/lap.jpeg"
     },
     {
       "_id": 2,
-      "title": "title 2",
-      "name": "name 2"
+      "title": "News 2: About Bengaluru",
+      "name": "name 2",
+      "img": "./client/src/images/newyear.png"
     },
     {
       "_id": 3,
-      "title": "title 3",
-      "name": "name 3"
+      "title": "News 3: About Bombay",
+      "name": "name 3",
+      "img": "./client/src/images/elonmusk.png"
+
     }
   ]
 }
